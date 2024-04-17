@@ -118,7 +118,7 @@ function Letter({ mv, number }: { mv: MotionValue; number: number }) {
 }
 
 export function Character({ value }: { value: number }) {
-  const [valueState, setValueState] = useState(14);
+  const [valueState, setValueState] = useState(characterOffset);
   let valueRoundedToPlace = Math.floor(valueState / 1);
   let animatedValue = useSpring(valueRoundedToPlace, {
     bounce: 0,
