@@ -1,7 +1,7 @@
 import Image from "next/image";
 import imageTapioca from "./tapioca.png";
 import Link from "next/link";
-import { Digit } from "./digit";
+import { Character, Puncuation } from "./characters";
 
 export default function Home() {
   return (
@@ -16,11 +16,60 @@ export default function Home() {
 
       <div className="text-wrapflex w-full items-center justify-center p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
         <div className="leading-[0]">
-          <span>OM : GW : E&apos;RE : SO : FCK : ING : CLO : SE</span>
+          <span>
+            <Character value={0} />
+            <Character value={1} />
+          </span>
           <span className="pl-4">
             <span className="pr-3">:</span>
-            <Digit place={1} value={0} delay={10000} />
-            <Digit place={1} value={0} delay={1000} />
+            <Character value={2} />
+            <Character value={3} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={4} />
+            <Character value={5} />
+            <Character value={6} />
+            <Character value={4} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={7} />
+            <Character value={0} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={8} />
+            <Character value={9} />
+            <Character value={10} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={8} />
+            <Character value={9} />
+            <Character value={10} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={11} />
+            <Character value={12} />
+            <Character value={2} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={9} />
+            <Character value={13} />
+            <Character value={0} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={7} />
+            <Character value={4} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Puncuation value={0} delay={10000} />
+            <Puncuation value={0} delay={1000} />
           </span>
         </div>
       </div>
