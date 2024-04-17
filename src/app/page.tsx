@@ -41,30 +41,17 @@ export default function Home() {
             <span className="pr-3">:</span>
             <Character value={8} />
             <Character value={9} />
-            <Character value={10} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={8} />
-            <Character value={9} />
-            <Character value={10} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={11} />
-            <Character value={12} />
-            <Character value={2} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={9} />
-            <Character value={13} />
             <Character value={0} />
           </span>
           <span className="pl-4">
             <span className="pr-3">:</span>
             <Character value={7} />
             <Character value={4} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={10} />
+            <Character value={1} />
           </span>
           <span className="pl-4">
             <span className="pr-3">:</span>

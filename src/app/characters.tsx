@@ -29,14 +29,12 @@ const characterSymbols = new Map<number, string>([
   [5, "'"],
   [6, "R"],
   [7, "S"],
-  [8, "F"],
-  [9, "C"],
-  [10, "K"],
-  [11, "I"],
-  [12, "N"],
-  [13, "L"],
-  [14, "0"],
+  [8, "C"],
+  [9, "L"],
+  [10, "T"],
+  [11, "0"],
 ]);
+const characterOffset = 12;
 
 function Symbol({ mv, number }: { mv: MotionValue; number: number }) {
   let y = useTransform(mv, (latest) => {
@@ -97,13 +95,13 @@ export function Puncuation({ value, delay }: { value: number; delay: number }) {
 
 function Letter({ mv, number }: { mv: MotionValue; number: number }) {
   let y = useTransform(mv, (latest) => {
-    let placeValue = latest % 15;
-    let offset = (15 + number - placeValue) % 15;
+    let placeValue = latest % characterOffset;
+    let offset = (characterOffset + number - placeValue) % characterOffset;
 
     let memo = offset * height;
 
     if (offset > 5) {
-      memo -= 15 * height;
+      memo -= characterOffset * height;
     }
 
     return memo;
