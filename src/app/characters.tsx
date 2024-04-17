@@ -8,16 +8,16 @@ const padding = 30;
 const height = fontSize + padding;
 
 const puncuationSymbols = new Map<number, string>([
-  [0, "!"],
-  [1, "?"],
-  [2, "."],
+  [0, "."],
+  [1, "!"],
+  [2, "?"],
   [3, "#"],
   [4, "!"],
   [5, "%"],
   [6, "*"],
   [7, "!"],
   [8, "@"],
-  [9, "0"],
+  [9, "$"],
 ]);
 
 const characterSymbols = new Map<number, string>([
@@ -61,10 +61,11 @@ function Symbol({ mv, number }: { mv: MotionValue; number: number }) {
 }
 
 export function Puncuation({ value, delay }: { value: number; delay: number }) {
-  const [valueState, setValueState] = useState(9);
+  const [valueState, setValueState] = useState(0);
   let valueRoundedToPlace = Math.floor(valueState / 1);
   let animatedValue = useSpring(valueRoundedToPlace, {
     bounce: 0,
+    duration: 1000,
   });
 
   useEffect(() => {
