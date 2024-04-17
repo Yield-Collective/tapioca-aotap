@@ -54,8 +54,8 @@ export default function Home() {
           </span>
           <span className="pl-4">
             <span className="pr-3">:</span>
-            <Puncuation value={0} delay={10000} />
-            <Puncuation value={0} delay={1000} />
+            <Puncuation value={1} delay={10000} />
+            <Puncuation value={6} delay={1000} />
           </span>
         </div>
       </div>
