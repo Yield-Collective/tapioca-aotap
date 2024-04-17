@@ -122,6 +122,7 @@ export function Character({ value }: { value: number }) {
   let valueRoundedToPlace = Math.floor(valueState / 1);
   let animatedValue = useSpring(valueRoundedToPlace, {
     bounce: 0,
+    duration: 2500,
   });
 
   useEffect(() => {

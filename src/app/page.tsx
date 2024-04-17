@@ -13,7 +13,6 @@ export default function Home() {
       >
         <Image src={imageTapioca} alt="Tapioca SVG" className="h-5 w-auto" />
       </Link>
-
       <div className="text-wrapflex w-full items-center justify-center p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
         <div className="leading-[0]">
           <span>
