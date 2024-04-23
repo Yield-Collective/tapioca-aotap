@@ -21,20 +21,14 @@ const puncuationSymbols = new Map<number, string>([
 ]);
 
 const characterSymbols = new Map<number, string>([
-  [0, "O"],
+  [0, "I"],
   [1, "M"],
-  [2, "G"],
-  [3, "W"],
-  [4, "E"],
-  [5, "'"],
-  [6, "R"],
-  [7, "S"],
-  [8, "C"],
-  [9, "L"],
-  [10, "T"],
-  [11, "0"],
+  [2, "N"],
+  [3, "E"],
+  [4, "T"],
+  [5, "0"],
 ]);
-const characterOffset = 12;
+const characterOffset = 6;
 
 function Symbol({ mv, number }: { mv: MotionValue; number: number }) {
   let y = useTransform(mv, (latest) => {
@@ -123,7 +117,7 @@ function Letter({ mv, number }: { mv: MotionValue; number: number }) {
 }
 
 export function Character({ value }: { value: number }) {
-  const [valueState, setValueState] = useState(characterOffset);
+  const [valueState, setValueState] = useState(characterOffset - 1);
   let valueRoundedToPlace = Math.floor(valueState / 1);
   let animatedValue = useSpring(valueRoundedToPlace, {
     bounce: 0,
