@@ -21,15 +21,15 @@ const puncuationSymbols = new Map<number, string>([
 ]);
 
 const characterSymbols = new Map<number, string>([
-  [0, "I"],
-  [1, "M"],
-  [2, "N"],
-  [3, "E"],
-  [4, "T"],
-  [5, "A"],
-  [6, "L"],
-  [7, "O"],
-  [8, "S"],
+  [0, "T"],
+  [1, "E"],
+  [2, "S"],
+  [3, "N"],
+  [4, "M"],
+  [5, "O"],
+  [6, "D"],
+  [7, "A"],
+  [8, "Y"],
   [9, "0"],
 ]);
 const characterOffset = 10;
