@@ -16,21 +16,6 @@ export default function Home() {
       <div className="text-wrapflex w-full items-center justify-center p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
         <div className="leading-[0]">
           <span>
-            <Character value={5} />
-            <Character value={6} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={1} />
-            <Character value={7} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={8} />
-            <Character value={4} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
             <Character value={0} />
             <Character value={1} />
           </span>
@@ -48,6 +33,11 @@ export default function Home() {
             <span className="pr-3">:</span>
             <Character value={2} />
             <Character value={4} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={4} />
+            <Character value={1} />
           </span>
           <span className="pl-4">
             <span className="pr-3">:</span>
