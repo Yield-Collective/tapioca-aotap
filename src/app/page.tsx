@@ -13,7 +13,7 @@ export default function Home() {
       >
         <Image src={imageTapioca} alt="Tapioca SVG" className="h-5 w-auto" />
       </Link>
-      <div className="text-wrapflex w-full items-center justify-center p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
+      <div className="text-wrapflex w-full items-center justify-center space-y-8 p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
         <div className="leading-[0]">
           <span>
             <Character value={0} />
@@ -45,6 +45,10 @@ export default function Home() {
             <Puncuation value={6} delay={1000} />
           </span>
         </div>
+
+        <p className="text-lg font-semibold tracking-wider">
+          Currently on testnet phase 2
+        </p>
       </div>
 
       <div className="mx-auto font-sans font-semibold text-[#faafe7]">
