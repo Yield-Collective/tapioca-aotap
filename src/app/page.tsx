@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         <p className="text-lg font-semibold tracking-wider">
-          Currently on testnet phase 2
+          testnet en progress: phase 2 of 4
         </p>
       </div>
 
