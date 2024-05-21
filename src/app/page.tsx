@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         <p className="text-lg font-semibold tracking-wider">
-          testnet en progress: phase 2 of 4
+          testnet en progress: phase 3 of 4
         </p>
       </div>
 
