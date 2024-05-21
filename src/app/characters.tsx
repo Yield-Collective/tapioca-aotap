@@ -26,9 +26,11 @@ const characterSymbols = new Map<number, string>([
   [2, "N"],
   [3, "E"],
   [4, "T"],
-  [5, "0"],
+  [5, "L"],
+  [6, "Y"],
+  [7, "0"],
 ]);
-const characterOffset = 6;
+const characterOffset = 8;
 
 function Symbol({ mv, number }: { mv: MotionValue; number: number }) {
   let y = useTransform(mv, (latest) => {
