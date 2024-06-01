@@ -16,26 +16,22 @@ export default function Home() {
       <div className="text-wrapflex w-full items-center justify-center space-y-8 p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
         <div className="leading-[0]">
           <span>
-            <Character value={0} />
-            <Character value={1} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={1} />
-            <Character value={0} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={2} />
             <Character value={3} />
+            <Character value={7} />
           </span>
           <span className="pl-4">
             <span className="pr-3">:</span>
-            <Character value={2} />
             <Character value={4} />
+            <Character value={8} />
           </span>
           <span className="pl-4">
             <span className="pr-3">:</span>
+            <Character value={3} />
+            <Character value={1} />
+          </span>
+          <span className="pl-4">
+            <span className="pr-3">:</span>
+            <Character value={3} />
             <Character value={5} />
             <Character value={6} />
           </span>
@@ -66,7 +62,7 @@ export default function Home() {
         </div>
 
         <p className="text-lg font-semibold tracking-wider">
-          testnet en progress: phase 3 of 4
+          testnet en progress: phase 4 of 4 (soon&trade;)
         </p>
       </div>
 
