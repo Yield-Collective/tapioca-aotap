@@ -17,8 +17,9 @@ const digitalFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tapioca Genesis Countdown",
-  description: "How close are we to Genesis? Soon...",
+  title: "Tapioca LBP Contributions",
+  description:
+    "Simple site that shows how much USDC Tapioca raised during their LBP",
 };
 
 export default function RootLayout({
