@@ -9,14 +9,16 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 export const config = createConfig({
   chains: [arbitrum],
   transports: {
-    [arbitrum.id]: http(),
+    [arbitrum.id]: http(
+      "https://arb-mainnet.g.alchemy.com/v2/mL7w2dTT_ji4IkDwWm9wcI7r_zN1tsF0",
+    ),
   },
 });
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      refetchInterval: 60000,
+      refetchInterval: 10000,
     },
   },
 });
