@@ -18,6 +18,7 @@ export const config = createConfig({
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
+      staleTime: 0,
       refetchInterval: 10000,
     },
   },
