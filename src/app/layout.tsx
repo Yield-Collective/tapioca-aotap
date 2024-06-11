@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import { WagmiProvider } from "./wagmi-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${digitalFont.variable}`}>
-        {children}
+        <WagmiProvider>{children}</WagmiProvider>
       </body>
     </html>
   );

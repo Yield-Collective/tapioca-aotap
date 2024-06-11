@@ -1,7 +1,7 @@
 import Image from "next/image";
 import imageTapioca from "./tapioca.png";
 import Link from "next/link";
-import { Character, Puncuation } from "./characters";
+import { AnimatedNumber } from "./animated-number";
 
 export default function Home() {
   return (
@@ -13,56 +13,11 @@ export default function Home() {
       >
         <Image src={imageTapioca} alt="Tapioca SVG" className="h-5 w-auto" />
       </Link>
-      <div className="text-wrapflex w-full items-center justify-center space-y-8 p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
-        <div className="leading-[0]">
-          <span>
-            <Character value={3} />
-            <Character value={7} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={4} />
-            <Character value={8} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={3} />
-            <Character value={1} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={3} />
-            <Character value={5} />
-            <Character value={6} />
-          </span>
-          <span className="pl-4">
-            <Character value={0} />
-            <Character value={1} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={1} />
-            <Character value={0} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={2} />
-            <Character value={3} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Character value={2} />
-            <Character value={4} />
-          </span>
-          <span className="pl-4">
-            <span className="pr-3">:</span>
-            <Puncuation value={1} delay={10000} />
-            <Puncuation value={6} delay={1000} />
-          </span>
-        </div>
+      <div className="w-full items-center justify-center space-y-8 p-0 font-digital text-4xl font-bold  text-[#faafe7] sm:p-24 md:text-6xl">
+        <AnimatedNumber />
 
         <p className="text-lg font-semibold tracking-wider">
-          testnet en progress: phase 4 of 4 (soon&trade;)
+          total USDC Contributed
         </p>
       </div>
 
