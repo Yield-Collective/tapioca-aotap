@@ -1,10 +1,9 @@
 "use client";
 
-import { motion, useSpring, useTransform } from "framer-motion";
-import { useEffect } from "react";
 import { useBalance } from "wagmi";
 import { arbitrum } from "viem/chains";
 import { Address } from "viem";
+import { NumberTicker } from "./magic-ticker";
 
 export function AnimatedNumber() {
   const result = useBalance({
@@ -15,20 +14,7 @@ export function AnimatedNumber() {
 
   const value = parseInt(result.data?.formatted ?? "000");
 
-  let spring = useSpring(value, {
-    mass: 0.8,
-    stiffness: 75,
-    damping: 15,
-  });
-  let display = useTransform(spring, (current) =>
-    Math.round(current).toLocaleString(),
-  );
-
-  useEffect(() => {
-    spring.set(value);
-  }, [spring, value]);
-
-  return <motion.span>{display}</motion.span>;
+  return <NumberTicker value={value} />;
 }
 
 export function AnimatedNumberLtap() {
@@ -38,20 +24,7 @@ export function AnimatedNumberLtap() {
     token: "0x00BeBF0fA54D8e67914Be964a7FA20130822a88d",
   });
 
-  const ltapLeft = parseInt(result.data?.formatted ?? "000");
+  const ltapLeft = parseInt(result.data?.formatted ?? "0");
 
-  let spring = useSpring(ltapLeft, {
-    mass: 0.8,
-    stiffness: 75,
-    damping: 15,
-  });
-  let display = useTransform(spring, (current) =>
-    Math.round(current).toLocaleString(),
-  );
-
-  useEffect(() => {
-    spring.set(ltapLeft);
-  }, [spring, ltapLeft]);
-
-  return <motion.span>{display}</motion.span>;
+  return <NumberTicker value={ltapLeft} />;
 }
