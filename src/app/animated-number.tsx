@@ -24,8 +24,7 @@ export function AnimatedNumberLtap() {
     token: "0x00BeBF0fA54D8e67914Be964a7FA20130822a88d",
   });
 
-  const formattedValue = parseInt(result.data?.formatted ?? "0");
-  const ltapLeft = formattedValue - 1160000;
+  const ltapLeft = parseInt(result.data?.formatted ?? "0");
 
   return <NumberTicker value={ltapLeft} />;
 }
