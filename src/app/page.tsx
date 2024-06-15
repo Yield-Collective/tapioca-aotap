@@ -1,53 +1,49 @@
-import { AnimatedNumber, AnimatedNumberLtap } from "./animated-number";
+import { AnimatedNumber } from "./animated-number";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    // Step 1: Wrap the main content in a div with relative positioning
     <div className="relative min-h-screen bg-[#0a0949] p-8 pt-4 text-center text-black">
-      <main className="flex flex-col items-start justify-between">
+      <main className="flex flex-col items-center justify-between">
         <div />
 
-        <div className="w-full items-center justify-center space-y-8 p-0 font-digital text-6xl font-bold text-[#faafe7] md:text-7xl">
-        <p className="text-sm md:text-6xl font-semibold tracking-wider text-white font-sans -mt-5 mt-8">
-  Tapioca aoTAP Data
-</p>
-
-          <div className="flex w-full flex-col justify-center gap-8 sm:flex-row sm:gap-16">
-            <div className="space-y-4">
+        <div className="w-full max-w-screen-lg mx-auto mt-8 mb-16 text-[#faafe7] text-center">
+          <h1 className="text-6xl font-bold leading-tight md:text-7xl">
+            Tapioca aoTAP Data
+          </h1>
+          <div className="mt-8 flex flex-col md:flex-row md:justify-center md:space-x-16">
+            <div className="text-5xl md:text-6xl font-bold">
               <AnimatedNumber />
               <p className="text-lg font-semibold tracking-wider">
-                Total $USDC accumulated from exercised options
+                Cumulative $USDC from Exercised Options
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mx-auto font-sans font-semibold text-[#faafe7] space-y-4">
-          View the live Airdrop Options contract on{" "}
-          <a
-            href="https://arbiscan.io/address/0xcf2e155eaa30706ff245679838006e6e092dd8b5"
-            className="underline underline-offset-4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Arbiscan
-          </a>
-          <hr className="border-t border-gray-200" />
-          <p>Real-time analytics brought to you by </p>
-          
-          <span className="underline underline-offset-4">
-          Capy Data Analytics
-        </span>
+        <div className="text-[#faafe7] text-center space-y-4">
+          <p>
+            View the Tapioca Airdrop Options contract on{" "}
+            <a
+              href="https://arbiscan.io/address/0xcf2e155eaa30706ff245679838006e6e092dd8b5"
+              className="underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Arbiscan
+            </a>
+          </p>
+          <hr className="border-t border-gray-200 my-4" />
+          <p>Real-time analytics brought to you by</p>
+          <p className="font-bold">Capy Data Analytics</p>
         </div>
       </main>
-
-
 
       <a
         href="https://app.uniswap.org/swap?outputCurrency=0x2C650dAb03A59332e2E0C0C4A7F726913e5028C1&chain=arbitrum"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-0 right-0 mt-8 mr-8 bg-[#faafe7] text-white font-bold py-3 px-5 rounded text-lg"
+        className="absolute top-8 right-8 bg-[#faafe7] text-white font-bold py-3 px-5 rounded text-lg"
       >
         Buy TAP
       </a>
