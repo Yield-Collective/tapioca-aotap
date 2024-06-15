@@ -6,9 +6,9 @@ export default function Home() {
       <div />
 
       <div className="w-full items-center justify-center space-y-8 p-0 font-digital text-6xl  font-bold text-[#faafe7] md:text-7xl">
-        <p className="text-lg md:text-8xl font-semibold tracking-wider text-white font-sans">
-          Tapioca aoTAP Data
-        </p>
+      <p className="text-sm md:text-6xl font-semibold tracking-wider text-white font-sans -mt-5">
+      Tapioca aoTAP Data
+      </p>
 
         <div className="flex w-full flex-col justify-center gap-8 sm:flex-row sm:gap-16">
           <div className="space-y-4">

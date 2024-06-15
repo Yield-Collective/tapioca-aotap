@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import { WagmiProvider } from "./wagmi-provider";
+import Footer from './footer';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,9 +18,9 @@ const digitalFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tapioca aoTAP Countdown",
+  title: "Tapioca aoTAP Data",
   description:
-    "Simple dApp to track the aoTAP real-time status.",
+    "Simple dApp to track aoTAP real-time status.",
 };
 
 export default function RootLayout({
@@ -30,7 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${digitalFont.variable}`}>
-        <WagmiProvider>{children}</WagmiProvider>
+        <WagmiProvider>
+          {children}
+          <Footer /> 
+        </WagmiProvider>
       </body>
     </html>
   );
