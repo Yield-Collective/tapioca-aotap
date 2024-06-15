@@ -14,21 +14,14 @@ export default function Home() {
           <div className="space-y-4">
             <AnimatedNumber />
             <p className="text-lg font-semibold tracking-wider">
-              $USDC from the aoTAP
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <AnimatedNumberLtap />
-            <p className="text-lg font-semibold tracking-wider">
-              Remaining aoTAP
+              $USDC accumulated from exercised options
             </p>
           </div>
         </div>
       </div>
 
       <div className="mx-auto font-sans font-semibold text-[#faafe7]">
-      View the live contract on {" "}
+      View the live Airdrop Options contract on {" "}
       <a href="https://arbiscan.io/address/0xcf2e155eaa30706ff245679838006e6e092dd8b5" className="underline underline-offset-4" target="_blank" rel="noopener noreferrer">
       Arbiscan
       </a>
