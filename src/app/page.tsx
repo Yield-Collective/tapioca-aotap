@@ -7,7 +7,7 @@ export default function Home() {
 
       <div className="w-full items-center justify-center space-y-8 p-0 font-digital text-6xl  font-bold text-[#faafe7] md:text-7xl">
       <p className="text-lg md:text-8xl font-semibold tracking-wider text-white font-sans">
-      Tapioca Airdrop Options
+      Tapioca Airdrop Options Data
       </p>
 
         <div className="flex w-full flex-col justify-center gap-8 sm:flex-row sm:gap-16">
