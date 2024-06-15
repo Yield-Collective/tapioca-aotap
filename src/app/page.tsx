@@ -7,8 +7,8 @@ export default function Home() {
       <main className="flex flex-col items-center justify-between">
         <div />
 
-        <div className="w-full max-w-screen-lg mx-auto mt-8 mb-16 text-[#faafe7] text-center">
-          <h1 className="text-6xl font-bold leading-tight md:text-7xl">
+        <div className="w-full max-w-screen-lg mx-auto mt-16 mb-16 text-[#faafe7] text-center">
+          <h1 className="text-6xl font-bold leading-tight md:text-7xl mb-8">
             Tapioca aoTAP Data
           </h1>
           <div className="mt-8 flex flex-col md:flex-row md:justify-center md:space-x-16">
@@ -21,7 +21,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-[#faafe7] text-center space-y-4">
+        <div className="text-[#faafe7] text-center space-y-4 mb-8">
           <p>
             View the Tapioca Airdrop Options contract on{" "}
             <a
@@ -37,16 +37,16 @@ export default function Home() {
           <p>Real-time analytics brought to you by</p>
           <p className="font-bold">Capy Data Analytics</p>
         </div>
-      </main>
 
-      <a
-        href="https://app.uniswap.org/swap?outputCurrency=0x2C650dAb03A59332e2E0C0C4A7F726913e5028C1&chain=arbitrum"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute top-8 right-8 bg-[#faafe7] text-white font-bold py-3 px-5 rounded text-lg"
-      >
-        Buy TAP
-      </a>
+        <a
+          href="https://app.uniswap.org/swap?outputCurrency=0x2C650dAb03A59332e2E0C0C4A7F726913e5028C1&chain=arbitrum"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-8 right-8 bg-[#faafe7] text-white font-bold py-2 px-4 md:py-3 md:px-5 rounded text-base md:text-lg"
+        >
+          Buy TAP
+        </a>
+      </main>
     </div>
   );
 }
