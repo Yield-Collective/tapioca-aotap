@@ -17,9 +17,9 @@ const digitalFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tapioca LBP Contributions",
+  title: "Tapioca aoTAP Countdown",
   description:
-    "Simple site that shows how much USDC Tapioca raised during their LBP",
+    "Simple dApp to track the aoTAP real-time status.",
 };
 
 export default function RootLayout({
