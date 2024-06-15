@@ -36,6 +36,8 @@ export default function Home() {
           Capy Data Analytics
         </span>
       </div>
-    </main>
+      </main>
   );
 }
+
+ 
