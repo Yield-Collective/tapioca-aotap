@@ -9,7 +9,7 @@ export default function Home() {
 
         <div className="w-full max-w-screen-lg mx-auto mt-16 mb-16 text-[#faafe7] text-center">
           <h1 className="text-6xl font-bold leading-tight md:text-7xl mb-8">
-            aoTAP Data: Phase 2 Live
+            aoTAP Data: Phase 3 Live
           </h1>
           <div className="mt-8 flex flex-col md:flex-row md:justify-center md:space-x-16">
             <div className="text-5xl md:text-6xl font-bold">
@@ -23,7 +23,7 @@ export default function Home() {
 
         <div className="text-[#faafe7] text-center space-y-4 mb-8">
           <p>
-            View the Tapioca Airdrop Options contract on{" "}
+            View the Airdrop Options contract on{" "}
             <a
               href="https://arbiscan.io/address/0xcf2e155eaa30706ff245679838006e6e092dd8b5"
               className="underline"
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
           <hr className="border-t border-gray-200 my-4" />
           <p>Real-time analytics brought to you by</p>
-          <p className="font-bold">Capy Data Analytics</p>
+          <p className="font-bold text-white">Capy Data Analytics</p>
         </div>
 
         <a
