@@ -9,7 +9,7 @@ export default function Home() {
 
         <div className="w-full max-w-screen-lg mx-auto mt-16 mb-16 text-[#faafe7] text-center">
           <h1 className="text-6xl font-bold leading-tight md:text-7xl mb-8">
-            aoTAP Data: Phase 3 Live
+            aoTAP Phases: COMPLETE
           </h1>
           <div className="mt-8 flex flex-col md:flex-row md:justify-center md:space-x-16">
             <div className="text-5xl md:text-6xl font-bold">
